@@ -16,6 +16,12 @@ fn main() {
     println!("The value of x is {}", x);
 
     second_function();
+
+    // variables can be assigned with the return values of functions like so
+    let f = third_function();
+    let s = fourth_function();
+    println!("{} is the return value!", f);
+    println!("{} is the return value!", s)
 }
 
 // Functions are called within main and are named in `snake_case`
@@ -31,4 +37,13 @@ fn second_function() {
     // print it out
     let aro = ar_one[0];
     println!("{}", aro);
+}
+
+// functions can return values either by declaring it last within a function
+fn third_function() -> i32 {
+    5
+}
+// or by the return statement
+fn fourth_function() -> i32 {
+    return 6;
 }
