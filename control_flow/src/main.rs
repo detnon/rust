@@ -35,7 +35,6 @@ fn loopy() {
 
 fn conditional_loop() {
     let mut number = 3;
-
     while number != 0 {
         println!("{}!", number);
 
