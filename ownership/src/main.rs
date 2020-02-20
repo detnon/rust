@@ -44,3 +44,5 @@ fn scope_example_clone() {
     println!("s1 = {}, s2 = {}", s1, s2);
     // this is more memory expensive
 }
+
+fn scope_example_copy() {}
