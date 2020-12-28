@@ -28,7 +28,8 @@ fn main() {
     );
 
     println!(
-        "Can rect1 hold rect3? {}", rect1.can_hold(&rect3)
+
+       "Can rect1 hold rect3? {}", rect1.can_hold(&rect3)
     );
 
 }
