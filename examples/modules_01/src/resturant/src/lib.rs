@@ -5,6 +5,11 @@ mod front_of_house {
 }
  
 mod back_of_house {
+    pub enum Appetizer{
+        Soup,
+        Salad,
+    }
+
     pub struct Breakfast{
         pub toast: String,
         seasonal_fruit: String,
@@ -19,12 +24,13 @@ mod back_of_house {
         }
     }
 
+
     fn fix_incorrect_order(){
         cook_order();
         super::serve_order();
     }
-    fn cook_order(){}
 
+    fn cook_order(){}
 }
 pub fn eat_at_resturaurant() {
     // Order breakfast with Rye toast
@@ -44,6 +50,9 @@ pub fn eat_at_resturaurant() {
 
     // Relative path
     front_of_house::hosting::add_to_waitlist();
+
+    let order1 = back_of_house::Appetizer::Soup;
+    let order2 = back_of_house::Appetizer::Salad;
 }
 
 fn serve_order(){}
