@@ -32,8 +32,16 @@ mod back_of_house {
 
     fn cook_order(){}
 }
+
+use crate::front_of_house::hosting::add_to_waitlist;
+
 pub fn eat_at_resturaurant() {
     // Order breakfast with Rye toast
+
+    add_to_waitlist();
+    add_to_waitlist();
+    add_to_waitlist();
+
     let mut meal = back_of_house::Breakfast::summer("Rye");
 
     // Change what bread we want
