@@ -34,7 +34,7 @@ for i in &vi {
 // in order to change the values
 let mut vm = vec![42, 26, 9];
 for i in &mut vm {
-    // `*` dereferences `i` in order to change its value
+    // `*` dereferences the value of `i` in order to change it
     *i += 50;
     println!("{}", i);
 }
