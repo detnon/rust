@@ -45,4 +45,6 @@ fn scope_example_clone() {
     // this is more memory expensive
 }
 
-fn scope_example_copy() {}
+fn scope_example_copy() {
+    //
+}
